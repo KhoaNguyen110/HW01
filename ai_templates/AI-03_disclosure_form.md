@@ -39,17 +39,3 @@
 | Prompt log                   | Tự ghi có timestamp      |
 
 ---
-
-### 4. Cam kết
-
-Em xác nhận rằng:
-
-- Em không dùng AI để tạo các artifact trong danh sách vi phạm
-- Mọi AI output đã được review và chỉnh sửa trước khi nộp
-- Thông tin khai báo trên là trung thực và đầy đủ
-
-**Ký tên:** Khoa
-
-**Ngày:** 04/06/2026
-
-**StudentID:** 23127393

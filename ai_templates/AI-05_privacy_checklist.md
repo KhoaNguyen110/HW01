@@ -12,7 +12,6 @@
 | --- | ------------------------------------------------------------------------------------ |
 | [x] | Tôi KHÔNG upload thông tin cá nhân nhạy cảm lên AI (CMND, số tài khoản, mật khẩu...) |
 | [x] | Tôi KHÔNG upload dữ liệu của người khác lên AI không có sự đồng ý                    |
-| [x] | Serial number thiết bị đã được che 4 ký tự giữa trước khi đưa vào report             |
 
 #### B. Sử dụng có trách nhiệm
 
@@ -33,23 +32,13 @@
 
 #### D. Công cụ đã dùng
 
-|     | Công cụ                  |
-| --- | ------------------------ |
-| [x] | ChatGPT GPT-4o           |
-| [x] | Claude Sonnet 4.6        |
-| [x] | Gemini Sidebar           |
-| [x] | Copilot                  |
-| [x] | Cursor                   |
-| [ ] | Khác: ******\_\_\_****** |
+|     | Công cụ                      |
+| --- | ---------------------------- |
+| [x] | ChatGPT GPT-4o               |
+| [x] | Claude Sonnet 4.6            |
+| [x] | Gemini Sidebar               |
+| [x] | Copilot                      |
+| [x] | Cursor                       |
+| [ ] | Khác: **\*\***\_\_\_**\*\*** |
 
 ---
-
-### Xác nhận
-
-Tôi đã đọc, hiểu và tuân thủ toàn bộ các quy định về sử dụng AI có trách nhiệm trong môn học này.
-
-**Ký tên:** Hieu
-
-**Ngày:** 04/06/2026
-
-**StudentID:** 23127364
