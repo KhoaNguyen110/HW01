@@ -6,11 +6,12 @@
 
 ### 1. Danh sách AI Tools đã sử dụng
 
-| Tool   | Phiên bản        | Mục đích sử dụng                                                                      |
-| ------ | ---------------- | ------------------------------------------------------------------------------------- |
-| Grok   | Grok 4.3         | Hỗ trợ tìm defect. lý thuyết về QA/QC                                                 |
-| Claude | Sonnet 4.6       | Hỗ trợ mindmap ISTQB, keyword tìm job, review 20 defects để tìm AI bias/hallucination |
-| Gemini | Gemini 3.5 Flash | Sinh 15 test case cho quạt (Req 3), tạo 20 sự kiện                                    |
+| Tool     | Phiên bản        | Mục đích sử dụng                                                                      |
+| -------- | ---------------- | ------------------------------------------------------------------------------------- |
+| Grok     | Grok 4.3         | Hỗ trợ tìm defect. lý thuyết về QA/QC                                                 |
+| Claude   | Sonnet 4.6       | Hỗ trợ mindmap ISTQB, keyword tìm job, review 20 defects để tìm AI bias/hallucination |
+| Gemini   | Gemini 3.5 Flash | Sinh 15 test case cho quạt (Req 3), tạo 20 sự kiện                                    |
+| DeepSeek | DeepSeek         | Định dạng nội dung file markdown                                                      |
 
 ---
 

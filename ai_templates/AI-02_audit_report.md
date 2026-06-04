@@ -666,7 +666,13 @@ Giới hạn cần thừa nhận: Claude cũng là LLM và cũng có thể hallu
 
 #### (5) Student Fix
 
-#Điều chỉnhLý do1Sự cố 6 (AI Agent Mexico): giữ nội dung, thêm tag [UNVERIFIED - source không xác minh được]Không đủ bằng chứng báo chí độc lập để confirm hoặc deny hoàn toàn2Sự cố 18 (Synapse Xray): thêm [ENTITY HALLUCINATION - confirmed] sau khi tra PubMed, Google Scholar và Google News không có kết quảVerify độc lập xác nhận đây là fabricated entity name3Sự cố 11 (VNPost): sửa mô tả attack vector từ "RDP misconfiguration" thành "attack vector chưa được xác nhận chính thức"Không có post-mortem public của VNPost xác nhận chi tiết này4Sự cố 14 (AT&T): thêm ghi chú "root cause kỹ thuật chi tiết chưa được AT&T công bố chính thức"Tránh trình bày assumption như fact đã xác minh5Bổ sung URL source trực tiếp cho 18/20 entries từ Reuters, The Verge, Cloudflare Blog, CrowdStrike PIR, EEOC Press ReleaseClaude không cung cấp URL - sinh viên tự tìm để đảm bảo traceability của artifact
+| #   | Điều chỉnh                                                                                                                            | Lý do                                                                             |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 1   | Sự cố 6 (AI Agent Mexico): giữ nội dung, thêm tag `[UNVERIFIED — source không xác minh được]`                                         | Không đủ bằng chứng báo chí độc lập để confirm hoặc deny hoàn toàn                |
+| 2   | Sự cố 18 (Synapse Xray): thêm `[ENTITY HALLUCINATION — confirmed]` sau khi tra PubMed, Google Scholar và Google News không có kết quả | Verify độc lập xác nhận đây là fabricated entity name                             |
+| 3   | Sự cố 11 (VNPost): sửa mô tả attack vector từ "RDP misconfiguration" thành "attack vector chưa được xác nhận chính thức"              | Không có post-mortem public của VNPost xác nhận chi tiết này                      |
+| 4   | Sự cố 14 (AT&T): thêm ghi chú "root cause kỹ thuật chi tiết chưa được AT&T công bố chính thức"                                        | Tránh trình bày assumption như fact đã xác minh                                   |
+| 5   | Bổ sung URL source trực tiếp cho 18/20 entries từ Reuters, The Verge, Cloudflare Blog, CrowdStrike PIR, EEOC Press Release            | Claude không cung cấp URL — sinh viên tự tìm để đảm bảo traceability của artifact |
 
 ## Entry 5: Test Case Generation for Physical Product (Requirement 3 - Test Design)
 
@@ -713,12 +719,12 @@ TCObjectivePreconditionStepsExpected ResultTC12Kiểm tra mất điện đột n
 
 ### (3) Verdict
 
-INCOMPLETE
+**INCOMPLETE**
 Claude sinh đủ 15 test case với cấu trúc rõ ràng và bao phủ các chức năng cơ bản. Tuy nhiên output thiếu hai yếu tố bắt buộc theo đề: (a) cột Actual Result và Verdict - đây là thông tin chỉ có được sau khi thực thi trên thiết bị thật, AI không thể tự điền; (b) AI không tự phát hiện được các edge case liên quan đến đặc tính vật lý cụ thể của thiết bị như trạng thái nút cơ học bị kẹt, rung lắc bất thường khi chuyển tốc độ đột ngột, hay hành vi khi cắm điện lại sau khi mất nguồn đột ngột trong lúc đang xoay - những điều này đòi hỏi kinh nghiệm kiểm thử thực tế với thiết bị vật lý.
 
 ---
 
-####(4) Reasoning
+### (4) Reasoning
 
 Theo ISTQB Foundation Level Section 4.2 - Black-Box Test Techniques, bộ test case này áp dụng chủ yếu Equivalence Partitioning (phân vùng tốc độ 1/2/3/off) và State Transition Testing (chuyển đổi giữa các trạng thái tốc độ và chế độ xoay). Tuy nhiên, theo ISTQB Section 1.4 về giới hạn của kiểm thử tĩnh và tự động, AI chỉ có thể suy luận test case từ đặc tả chức năng - không thể quan sát hành vi vật lý thực tế của thiết bị như độ rung, âm thanh bất thường, hay phản hồi cơ học của nút bấm. Do đó các edge case phát sinh từ đặc tính vật lý (TC13, TC14, TC15 mở rộng) cần được bổ sung bởi tester có tương tác trực tiếp với thiết bị.
 
@@ -726,4 +732,20 @@ Theo ISTQB Foundation Level Section 4.2 - Black-Box Test Techniques, bộ test c
 
 ### (5) Student Fix
 
-#Điều chỉnhLý do1Bổ sung cột Actual Result và Verdict cho tất cả 15 TC sau khi thực thi trên quạt thậtAI không thể tự điền - đây là dữ liệu chỉ có từ thực thi thực tế2Thêm TC16 (edge case): Cắm điện lại sau khi rút đột ngột trong lúc đang xoay - kiểm tra quạt có nhớ trạng thái cũ khôngAI không tạo ra TC này vì không biết đặc tính cơ học của nút bấm vật lý3Thêm TC17 (edge case): Nhấn đồng thời 2 nút tốc độ cùng lúc - kiểm tra hành vi khi nút cơ học bị nhấn chồngAI không tạo ra TC này vì nút cơ học của quạt có thể bị kẹt cả hai cùng lúc, không xảy ra với UI số4Thêm TC18 (edge case): Để quạt chạy liên tục số 3 trong 30 phút - kiểm tra nhiệt độ thân máy và ổn định tốc độ dài hạnAI không tạo ra TC dạng stress/endurance cho thiết bị vật lý5Cập nhật precondition TC11: bổ sung "chế độ xoay đang hoạt động" rõ ràng hơn thay vì chỉ ghi "đang xoay"Precondition gốc thiếu thông tin trạng thái tốc độ quạt tại thời điểm nhấn nút 0
+| #   | Điều chỉnh                                                                                                              | Lý do                                                                                               |
+| --- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| 1   | Bổ sung cột Actual Result và Verdict cho tất cả 15 TC sau khi thực thi trên quạt thật                                   | AI không thể tự điền - đây là dữ liệu chỉ có từ thực thi thực tế                                    |
+| 2   | Thêm TC17 (edge case): Cắm điện lại sau khi rút đột ngột trong lúc đang xoay - kiểm tra quạt có nhớ trạng thái cũ không | AI không tạo ra TC này vì không biết đặc tính cơ học của nút bấm vật lý                             |
+| 3   | Thêm TC16 (edge case): Nhấn đồng thời 2 nút tốc độ cùng lúc - kiểm tra hành vi khi nút cơ học bị nhấn chồng             | AI không tạo ra TC này vì nút cơ học của quạt có thể bị kẹt cả hai cùng lúc, không xảy ra với UI số |
+| 4   | Thêm TC15 (edge case): Kiểm tra nhấn nút liên tục nhanh - kiểm tra hành vi bất thường, quạt có bị kẹt không             | AI không tạo ra TC này vì không biết quạt sẽ nhận mức nào khi nhấn quá nhanh                        |
+| 5   | Cập nhật precondition TC11: bổ sung "chế độ xoay đang hoạt động" rõ ràng hơn thay vì chỉ ghi "đang xoay"                | Precondition gốc thiếu thông tin trạng thái tốc độ quạt tại thời điểm nhấn nút 0                    |
+
+---
+
+Tổng kết các edge case do AI bỏ lỡ (Req 3)
+
+| TC#  | Edge case mô tả                                            | Lý do AI bỏ lỡ                                                                                                 |
+| ---- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| TC15 | Kiểm tra nhấn nút liên tục nhanh                           | AI mặc định giao diện số (digital UI) nơi không thể nhấn liên tục; không nghĩ đến tương tác vật lý bất thường  |
+| TC16 | Nhấn đồng thời 2 nút tốc độ vật lý cùng lúc                | AI mặc định giao diện số (digital UI) nơi không thể nhấn đồng thời; không nghĩ đến tương tác vật lý bất thường |
+| TC17 | Cắm điện lại sau khi rút đột ngột trong lúc quạt đang xoay | AI không có kiến thức về hành vi nhớ trạng thái của thiết bị cơ-điện tử; chỉ biết test UI/software             |
