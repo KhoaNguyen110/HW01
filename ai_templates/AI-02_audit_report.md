@@ -1,3 +1,302 @@
+## Entry 1: ISTQB Process Mindmap
+
+**Date of Audit**: 2026-06-02
+
+**Target AI Model**: Claude-4.6-Sonnet
+
+**Task**: Đánh giá, phân tích lỗi sai và đề xuất chỉnh sửa mindmap quy trình kiểm thử phần mềm theo chuẩn ISTQB do AI tạo ra.
+
+### (1) Prompt + Tool
+
+**Tool used**: Claude-4.6-Sonnet
+**Timestamp**: 23:14 - 02/06/2026
+**Prompt**:
+Dựa trên thông tin đã cho, hãy thực hiện các yêu cầu sau:
+
+Xây dựng một mindmap dạng text có phân cấp rõ ràng, thể hiện toàn bộ quy trình kiểm thử phần mềm theo chuẩn ISTQB và vai trò cụ thể của QA/QC tại mỗi giai đoạn.
+Liệt kê các từ khóa được sử dụng phổ biến nhất khi tìm kiếm việ làm trong lĩnh vực QA/QC trên các nền tảng tuyển dụng như LinkedIn goes to Indeed.
+Đề xuất thêm bộ từ khóa cuyên biệt nhắm vào các vị trí QA/QC liên quan đến đến đến đến đến đến khóa chuyên biệt nhắm vào các vị trí QA/QC liên quan đến đến đến đến đến đặc Automation AI, phù hợp với định hướng thị trường lao động năm 2026.
+
+---
+
+### (2) AI Output
+
+```
+Yêu cầu 1 - ISTQB Testing Process Mindmap
+QA/QC & Kiểm thử phần mềm (Chuẩn ISTQB)
+│
+├── 1. Test Planning
+│ ├── Xác định mục tiêu & phạm vi kiểm thử
+│ ├── Phân tích rủi ro & ưu tiên hóa test items
+│ ├── Xây dựng Test Strategy & Test Approach
+│ ├── Lên kế hoạch nguồn lực & lịch trình
+│ └── Xác định Entry/Exit Criteria
+│ [Executor: Test Lead / Test Manager]
+│
+├── 2. Test Monitoring & Control
+│ ├── Theo dõi tiến độ thực tế so với kế hoạch
+│ ├── Đo lường Defect Metrics & lập báo cáo định kỳ
+│ ├── Đánh giá Exit Criteria (liên tục, không phải cuối kỳ)
+│ └── Thực hiện hành động điều chỉnh khi cần
+│ [Executor: Test Lead / Test Manager]
+│
+├── 3. Test Analysis
+│ ├── Rà soát Test Basis (requirements, specs, user stories)
+│ ├── Xác định Test Conditions từ test basis
+│ └── Phân tích Testability của từng đối tượng
+│ [Executor: QC Engineer]
+│
+├── 4. Test Design
+│ ├── Kỹ thuật Black-box (Tester chịu trách nhiệm chính)
+│ │ ├── Equivalence Partitioning
+│ │ ├── Boundary Value Analysis
+│ │ ├── Decision Table Testing
+│ │ ├── State Transition Testing
+│ │ └── Use Case Testing
+│ └── Kỹ thuật Experience-based
+│ ├── Exploratory Testing
+│ ├── Error Guessing
+│ └── Checklist-based Testing
+│ [Executor: QC Engineer / Manual Tester]
+│
+├── 5. Test Implementation
+│ ├── Tạo Test Cases & Test Scripts (manual + automated)
+│ ├── Chuẩn bị Test Data
+│ ├── Thiết lập Test Environment
+│ └── Sắp xếp thứ tự ưu tiên thực thi
+│ [Executor: QC Engineer / Automation Engineer]
+│
+├── 6. Test Execution
+│ ├── Thực thi Manual Test Cases
+│ ├── Chạy Automation Scripts
+│ ├── Ghi nhận kết quả thực tế & so sánh expected
+│ ├── Báo cáo & theo dõi Defects
+│ └── Thực hiện Regression Testing
+│ [Executor: Manual Tester / Automation Engineer / Performance Tester / AI-LLM Test Engineer]
+│
+├── 7. Test Completion
+│ ├── Xác nhận Exit Criteria đã được thỏa mãn
+│ ├── Viết Test Summary Report
+│ ├── Lưu trữ Test Artifacts
+│ └── Tổ chức Lessons Learned / Retrospective
+│ [Executor: Test Lead / Test Manager]
+│
+└── [PHỤ LỤC] White-box Testing
+├── Statement Coverage
+├── Branch Coverage
+└── Path Coverage
+⚠ Nằm ngoài phạm vi Tester - thực hiện bởi Developer
+trong giai đoạn Unit Testing
+
+Yêu cầu 2 - Keywords tìm job QA/QC trên LinkedIn / Indeed
+Job title phổ biến:
+QA Engineer / QC Engineer
+Software Tester / Test Engineer
+Quality Assurance Engineer
+Manual Tester / Automation Tester
+SDET (Software Development Engineer in Test)
+Test Lead / QA Manager
+Kết hợp địa điểm / hình thức:
+QA Engineer Vietnam
+Software Tester Ho Chi Minh City
+QA Engineer Remote Vietnam
+
+Yêu cầu 3 - Keywords chuyên biệt AI/LLM/Automation-AI 2026
+Job title mới nổi:
+AI Test Engineer
+LLM QA Engineer
+Prompt Testing Engineer
+AI Quality Engineer
+Generative AI Tester
+ML Model Tester / ML QA Engineer
+Tool & Framework keywords:
+Playwright / Cypress / Selenium + AI
+Testim / Mabl / Applitools
+DeepEval / Promptfoo
+LLM Evaluation / Model Evaluation
+Skill keywords để filter job có ứng dụng AI:
+"AI testing" QA
+"LLM" tester
+"prompt engineering" QA
+"hallucination testing"
+"RAG" testing
+"generative AI" quality assurance
+"model evaluation" engineer
+Boolean search string cho LinkedIn:
+(QA OR "quality assurance") AND (AI OR LLM OR "generative AI")
+"AI testing" engineer Vietnam
+"automation AI" QA 2026
+```
+
+---
+
+### (3) Verdict
+
+INCOMPLETE & PARTIALLY INVALID
+Output gốc của AI tái hiện đúng bộ khung 7 bước của quy trình ISTQB nhưng mắc 3 lỗi sai có hệ thống ở cấp độ logic nghiệp vụ:
+
+Lỗi phân loại kỹ thuật: White-box techniques bị đặt ngang hàng với Black-box trong phạm vi công việc của Tester, vi phạm nguyên tắc phân công trách nhiệm theo chuẩn ISTQB - White-box is a Developer for Unit Test.
+Lỗi logic tuần tự: Evaluate exit criteria bị đặt sai vị trí vào Test Completionthay vì phải là hoạt động liên tục trong Test Monitoring & Control, làm sai lệch luồng quyết định dừng/tiếp tục kiểm thử.
+Lỗi cấu trúc sơ đồ: Nhánh QA/QC Rolesbị tách độc lập ở cuối, liệt kê chức danh thụ động mà không gắn kết với từng giai đoạn thực thi, làm mất giá trị mapping vai trò vào quy trình.
+
+---
+
+### (4) Reasoning
+
+This is why we have AI xếp White-box techniques (Statement, Branch, Path Coverage) and we have Black-box trong giai đoạn Test Design của Tester. Theo chuẩn ISTQB và nội dung bài giảng, các kỹ thuật này yêu cầu can thiệp trực tiếp vào mã nguồn nên thuộc trách nhiệm của Developer trong Unit Testing, không nằm trong phạm vi công việc thông thường của QC Engineer ở mức System Test.
+Lỗi thứ hai là Evaluate exit criteriabị đặt vào Test Completionthay vì Test Monitoring & Control. ISTQB quy định đây là hoạt động đánh giá liên tục để đưa ra quyết định Go/No-Go trong suốt quá trình kiểm thử - không phải công việc hậu kỳ sau khi testing đã kết thúc.
+Lỗi thứ ba là nhánh QA/QC Rolesbị tách rời hoàn toàn khỏi các bước quy trình. Một mindmap quy trình cần thể hiện rõ ai chịu trách nhiệm cho hành động nào tại từng giai đoạn; liệt kê chức danh độc lập ở cuối sơ đồ không đáp ứng được yêu cầu mapping vai trò - hành động theo tiêu chuẩn nghề nghiệp.
+
+---
+
+### (5) Student Fix
+
+QA/QC & Kiểm thử phần mềm (Quy trình chuẩn ISTQB)
+│
+├── 1. Test Planning
+│ ├── Xác định mục tiêu & phạm vi kiểm thử
+│ ├── Phân tích rủi ro & ưu tiên hóa
+│ ├── Xây dựng Test Strategy & Test Approach
+│ ├── Lên kế hoạch nguồn lực & lịch trình
+│ └── Xác định Entry/Exit Criteria
+│ [Owner: QA | Executor: Test Lead / Test Manager]
+│
+├── 2. Test Monitoring & Control
+│ ├── Theo dõi tiến độ thực tế so với kế hoạch
+│ ├── Đo lường Defect Metrics & báo cáo định kỳ
+│ ├── \*\*\* Đánh giá Exit Criteria (liên tục - Go/No-Go)
+│ └── Điều chỉnh kế hoạch khi phát hiện lệch lạc
+│ [Owner: QA | Executor: Test Lead / Test Manager]
+│
+├── 3. Test Analysis
+│ ├── Rà soát Test Basis (yêu cầu, đặc tả, user stories)
+│ ├── Xác định Test Conditions
+│ └── Phân tích Testability
+│ [Owner: QA | Executor: QC Engineer]
+│
+├── 4. Test Design
+│ ├── Kỹ thuật Black-box
+│ │ ├── Equivalence Partitioning & Boundary Value Analysis
+│ │ ├── Decision Table & State Transition Testing
+│ │ └── Use Case Testing
+│ └── Kỹ thuật Experience-based
+│ ├── Exploratory Testing & Error Guessing
+│ └── Checklist-based Testing
+│ [Owner: QC | Executor: QC Engineer / Manual Tester]
+│
+├── 5. Test Implementation
+│ ├── Viết Test Cases & chuẩn bị Test Data
+│ ├── Xây dựng Automation Scripts
+│ ├── Thiết lập Test Environment
+│ └── Sắp xếp thứ tự ưu tiên thực thi
+│ [Owner: QC | Executor: QC Engineer / Automation Engineer]
+│
+├── 6. Test Execution
+│ ├── Thực thi Manual Test Cases
+│ ├── Chạy Automation Scripts & Regression Tests
+│ ├── Load / Stress / Performance Testing
+│ ├── Đánh giá thành phần AI/LLM
+│ └── Ghi nhận kết quả & báo cáo Defects
+│ [Owner: QC | Executor: Manual Tester / Automation Engineer
+│ / Performance Tester / AI-LLM Test Engineer]
+│
+├── 7. Test Completion
+│ ├── Xác nhận Exit Criteria đã thỏa mãn
+│ ├── Viết Test Summary Report
+│ ├── Lưu trữ Test Artifacts
+│ └── Lessons Learned / Retrospective
+│ [Owner: QA | Executor: Test Lead / Test Manager]
+│
+└── [PHỤ LỤC] White-box Testing
+├── Statement Coverage
+├── Branch Coverage
+└── Path Coverage
+⚠ Nằm ngoài phạm vi Tester
+Owner: Dev | Executor: Developer - Unit Testing
+
+## Entry 2: Job Analysis / AI Replacement
+
+**Date of Audit**: 2026-06-03
+**Target AI Model**: Gemini 1.5 Flash
+**Task**: Phân tích 10 job posting trong lĩnh vực QA/QC để đánh giá mức độ ứng dụng AI trong từng vai trò và xác định những kỹ năng nào vẫn đòi hỏi sự tham gia của con người.
+
+### (1) Prompt + Tool
+
+Tool: Gemini 1.5 Flash
+Timestamp: 11:00 03/06/2026
+
+Dưới đây là 10 job posting trong lĩnh vực QA/QC. Here I see you, there you have it:
+
+Những phần công việc nào AI hiện tại có thể hỗ trợ hoặc thay thế một phần.
+Những kỹ năng hoặc tình huống nào vẫn đòi hỏi test là con người thực sự. Trả lời ngắn gọn, tối đa 3–4 câu cho mỗi job.
+
+---
+
+### (2) AI Output
+
+```
+Job 1 — Manual Software Tester, Savills Vietnam:
+AI can handle repetitive regression tests in an Agile environment, cutting down the manual workload between sprints. But understanding real estate domain specifics and talking directly to stakeholders? Still needs a test who's been there and done that.
+
+
+Job 2 — Software Tester (QA QC, SQL), Gene Solutions:
+In biomedical, AI can help analyze large test datasets and spot anomalies in genetic testing results. However, given the high accuracy requirements and legal implications of medical data, testers have to verify things themselves — no handing over the kidneys entirely to AI.
+
+
+Job 3 — QA Engineer (VibeX-Generated Apps), MetaCrew:
+This role tests apps that are themselves generated by AI (vibe coding) — a completely new kind of QA work that no ISTQB framework has clearly defined yet. AI creates the app, but it's not yet capable of properly testing its own output. That makes the human QA role even more essential here.
+
+
+Job 4 — Manual/Automation Tester, MiTek Vietnam:
+AI can auto-generate test scripts from business requirements, speeding up the shift from manual to automation. But with MiTek's specialized construction engineering products, validating right vs. wrong still requires testers who deeply understand the domain.
+
+
+Job 5 — Automation Tester (ERP, Retail), CellphoneS:
+AI is great at auto-generating test data and predicting bug-prone areas in complex retail ERP systems. Still, testers need to design the test strategy themselves based on actual sales workflows — something AI doesn't have enough context to decide on its own.
+
+
+Job 6 — Manual Tester, Viettel Post:
+In a logistics environment like Viettel Post, AI can analyze system logs and detect error patterns in real time. But end-to-end testing of shipping flows that involve multiple internal systems? That still needs testers who know the real operational processes inside out.
+
+
+Job 7 — QA Team Lead, Nakivo:
+AI can help a QA Lead summarize reports, analyze defect trends, and suggest testing priorities. But leading a team, making architectural decisions about testing, and mentoring members — those require leadership skills and judgment that AI just can't handle yet.
+
+
+Job 8 — SDET (AI-First), OPSWAT:
+This one is clearly AI-first: it asks testers to integrate AI into the entire testing workflow, from generating test cases to analyzing results. It marks a shift from "tester using tools" to "tester collaborating with AI agents." This role proves that AI isn't eliminating QA — it's raising the skill bar. Testers now need to understand both ML pipelines and traditional test methodology.
+
+
+Job 9 — QA Engineer, Motorola Solutions:
+Motorola Solutions works in public safety, where AI can assist with embedded system testing and automated firmware log analysis. But because this is a safety-critical industry, QA Engineers must personally validate and sign off on results — no delegating full authority to AI.
+
+
+Job 10 — QA Engineer (AI Testing), SCC Vietnam:
+This role focuses on testing the quality of AI systems themselves: detecting hallucinations, evaluating bias, and checking model robustness — all skills that aren't in any traditional ISTQB syllabus. It's the clearest proof that AI is creating an entirely new branch of QA, where humans need to understand AI in order to control it.
+```
+
+---
+
+### (3) Verdict
+
+VALID — INCOMPLETE
+Gemini nhận diện đúng ranh giới giữa phần công việc AI có thể hỗ trợ và phần cần con người ở cả 10 job. Tuy nhiên output dừng lại ở mức quan sát bề mặt, chưa đi sâu vào lý do kỹ thuật cụ thể tại sao AI chưa thể thay thế — đặc biệt thiếu liên kết với các nguyên tắc kiểm thử như risk-based testing, domain knowledge dependency, hay accountability strong safety-critical systems.
+
+---
+
+### (4) Reasoning
+
+Với các role thiên về manual testing trong domain đặc thù (Job 1 — bất động sản, Job 2 — y sinh, Job 4 — xây dựng, Job 6 — logistics), Gemini đúng khi chỉ ra rằng AI không có domain context. Tuy nhiên cần làm rõ hơn: đây không chỉ là vấn đề kiến ​​thức, mà là vấn đề trách nhiệm pháp lý và nghiệp vụ — trong các môi trường có dữ liệu nhạy cảm hoặc tác động trực tiếp đến người dùng cuối, kết quả kiểm thử phải được một con người có thẩm quyền xác nhận.
+Với Job 3 (MetaCrew) và Job 10 (SCC Vietnam), Gemini nắm bắt được điểm mấu chốt: AI đang tạo ra một nhánh QA hoàn toàn mới mà ISTQB chưa định nghĩa. Tuy nhiên output chưa phân biệt được sự khác nhau giữa testing AI output (kiểm tra kết quả do AI tạo ra) và AI-assisted testing (dùng AI để hỗ trợ quy trình kiểm thử) — đây là hai bài toán kỹ thuật khác nhau hoàn toàn.
+Với Job 7 (Nakivo) và Job 8 (OPSWAT), Gemini nhận xét chính xác rằng AI đang nâng bar kỹ năng thay vì loại bỏ vai trò con người. Điều này phù hợp với xu hướng thị trường 2026: các job description ngày càng yêu cầu test hiểu ML pipeline, prompt engineering, và CI/CD integration — những kỹ năng không xuất hiện trong bất kỳ phiên bản ISTQB nào trước đây.
+
+---
+
+### (5) Student Fix
+
+Bảng tổng hợp đánh giá lại 10 jobs với phân tích bổ sung:
+#JobAI có thể thay thếHuman vẫn cần thiết vìMức độ AI tác động1Manual Tester — SavillsRegression test lặp lại, test case generationDomain knowledge is important, it is a stakeholder roleThấp–Trung2Test (SQL) — Gene SolutionsPhân tích dataset lớn, phát hiện anomalyXác minh dữ liệu y tế có hàm ý pháp lý, trách nhiệm cá nhânThấp3QA Engineer — MetaCrewKhông — AI tạo app nhưng chưa tự test được output của chính nóKiểm thử AI-generated UI đòi hỏi tư duy phê phán mà AI thiếuCao (vai trò mới)4Manual/Auto Tester — MiTekAuto-generate test scripts từ requirementsHiểu nghiệp vụ xây dựng để xác định đúng/saiTrung5Automation Tester — CellphoneSAuto-generate test data, to cover bug-prone areasThiết kế test strategy dựa trên sales workflow thực tếTrung-Cao6Manual Tester — Viettel PostPhân tích log, phát hiện error pattern real-timeE2E testing takes placeThấp–Trung7QA Team Lead — NakivoTóm tắt báo cáo, phân tích defect trendWhat's more, mentoring, what's moreTrung8SDET (AI-First) — OPSWATTích hợp AI vào toàn bộ workflow kiểm thửHiểu ML pipeline, thiết kế self-healing automationRất cao9QA Engineer — MotorolaHỗ trợ test firmware, phân tích logSign-off is a strong safety-critical system, but it doesn’t matter.Trung10QA Engineer (AI Testing) — SCCKhông — đây là role kiểm soát chất lượng của chính AIDetect hallucination, bias, robustness — kỹ năng ngoài ISTQBRất cao (nhánh QA mới)
+
 ## Entry 3: 20 Software Defects 2022–2026 (Requirement 2)
 
 **Date of Audit:** 2026-06-03
@@ -8,7 +307,7 @@
 
 ---
 
-### (1) Prompt + Tool
+#### (1) Prompt + Tool
 
 **Tool used:** Grok
 
@@ -34,7 +333,7 @@ Sau khi viết xong 4 mục trên cho mỗi sự cố, hãy viết thêm 1 dòng
 
 ---
 
-### (2) AI Output
+#### (2) AI Output
 
 ```
 DANH SÁCH 20 SỰ CỐ LỖI PHẦN MỀM NỔI TIẾNG (2022 - 2026)
@@ -263,30 +562,30 @@ Nhận định chuyên gia: Internet thực chất mỏng manh hơn chúng ta t�
 
 ```
 
-### (3) Verdict
+#### (3) Verdict
 
 **INCOMPLETE**
 
 Output mô tả kỹ thuật chi tiết, source rõ ràng, có nhận định chuyên gia. Tuy nhiên còn thiếu ở các điểm sau:
 Thiếu hoàn toàn:
 
-- Trường Severity cho cả 20 defect — đề yêu cầu ghi mức độ nghiêm trọng theo thang chuẩn (Critical/High/Medium/Low) nhưng AI không có trường này, chỉ mô tả bằng ngôn ngữ tự nhiên lồng trong phần hậu quả
-- Trường AI bias/hallucination cho mỗi defect — đây là yêu cầu bắt buộc của đề, AI không tự thêm vào
+- Trường Severity cho cả 20 defect - đề yêu cầu ghi mức độ nghiêm trọng theo thang chuẩn (Critical/High/Medium/Low) nhưng AI không có trường này, chỉ mô tả bằng ngôn ngữ tự nhiên lồng trong phần hậu quả
+- Trường AI bias/hallucination cho mỗi defect - đây là yêu cầu bắt buộc của đề, AI không tự thêm vào
   Cần verify thủ công:
-- Defect #6 (AI Agent Mexico) — source "OWASP GenAI Report Q1-2026" chưa xác minh được, có khả năng AI hallucinate tên tài liệu này
-- Defect #11 (VNPost) — source "VietnamNet" chưa có URL cụ thể, cần tìm link bài báo gốc
+- Defect #6 (AI Agent Mexico) - source "OWASP GenAI Report Q1-2026" chưa xác minh được, có khả năng AI hallucinate tên tài liệu này
+- Defect #11 (VNPost) - source "VietnamNet" chưa có URL cụ thể, cần tìm link bài báo gốc
 
 ---
 
-### (4) Reasoning
+#### (4) Reasoning
 
 Theo ISTQB Foundation Level Syllabus, một test artifact hợp lệ phải bao gồm đầy đủ các trường được định nghĩa trong test case template, bao gồm severity/priority.
 Output AI thiếu trường Severity chuẩn hóa, vi phạm nguyên tắc completeness của test documentation (ISTQB FL 5.2).
-Ngoài ra, ISTQB nhấn mạnh rằng test output phải traceable đến requirements — defect #6 thiếu source xác minh nên không đảm bảo traceability. Việc AI không tự thêm trường AI bias/hallucination cho thấy AI không hiểu được context-specific requirements của bài tập này, phù hợp với giới hạn của G9.1 (Understand) trong Bloom-AI taxonomy.
+Ngoài ra, ISTQB nhấn mạnh rằng test output phải traceable đến requirements - defect #6 thiếu source xác minh nên không đảm bảo traceability. Việc AI không tự thêm trường AI bias/hallucination cho thấy AI không hiểu được context-specific requirements của bài tập này, phù hợp với giới hạn của G9.1 (Understand) trong Bloom-AI taxonomy.
 
 ---
 
-### (5) Student Fix
+#### (5) Student Fix
 
 Các chỉnh sửa đã thực hiện so với output gốc của AI:
 
@@ -301,32 +600,32 @@ Các chỉnh sửa đã thực hiện so với output gốc của AI:
 
 **Date of Audit**: 2026-06-02
 **Target AI Model**: Claude Sonnet 4.6
-**Task**: Sử dụng Claude Sonnet 4.6 như một AI Reviewer độc lập để kiểm định chất lượng nội dung do Gemini tạo ra — xác minh tính xác thực lịch sử và phát hiện các dạng lỗi nhận thức (hallucination, attribution sai, bias phân tích, thiếu thông tin cốt lõi) trên toàn bộ 20 defect entries
+**Task**: Sử dụng Claude Sonnet 4.6 như một AI Reviewer độc lập để kiểm định chất lượng nội dung do Gemini tạo ra - xác minh tính xác thực lịch sử và phát hiện các dạng lỗi nhận thức (hallucination, attribution sai, bias phân tích, thiếu thông tin cốt lõi) trên toàn bộ 20 defect entries
 
-### (1) Prompt + Tool
+#### (1) Prompt + Tool
 
 **Tool used**: Claude Sonnet 4.6
 **Timestamp**: 19:30 02/06/2026
 **Prompt**: Dựa trên danh sách 20 sự cố lỗi phần mềm ở trên, hãy thực hiện hai bước kiểm định sau:
-Bước 1 — Xác thực lịch sử: Rà soát xem có sự cố nào trong danh sách không có thật, bị sai lệch về mốc thời gian, hoặc sai lệch về bản chất kỹ thuật so với thực tế được ghi nhận trong giai đoạn 2022–2026 không. Nếu có, chỉ rõ từng trường hợp.
-Bước 2 — Kiểm định chất lượng nội dung: Với mỗi entry trong 20 sự cố, hãy phân tích phần mô tả kỹ thuật và nhận định chuyên gia — chỉ ra đúng 1 điểm mà AI trước đó đã giải thích chưa chính xác, bị hallucinate, thiếu thông tin cốt lõi, hoặc có định kiến đổ lỗi sai mục tiêu.
+Bước 1 - Xác thực lịch sử: Rà soát xem có sự cố nào trong danh sách không có thật, bị sai lệch về mốc thời gian, hoặc sai lệch về bản chất kỹ thuật so với thực tế được ghi nhận trong giai đoạn 2022–2026 không. Nếu có, chỉ rõ từng trường hợp.
+Bước 2 - Kiểm định chất lượng nội dung: Với mỗi entry trong 20 sự cố, hãy phân tích phần mô tả kỹ thuật và nhận định chuyên gia - chỉ ra đúng 1 điểm mà AI trước đó đã giải thích chưa chính xác, bị hallucinate, thiếu thông tin cốt lõi, hoặc có định kiến đổ lỗi sai mục tiêu.
 Trình bày kết quả theo cấu trúc:
 
-Sự cố X — [Tên sự cố]:
+Sự cố X - [Tên sự cố]:
 Điểm sai/thiếu: [mô tả cụ thể sai ở đâu, thực tế là gì hoặc thiếu thông tin gì]
 
 ---
 
-### (2) AI Output
+#### (2) AI Output
 
 ```
 Xác thực lịch sử: Claude xác nhận 18/20 sự cố có cơ sở thực tế. Hai sự cố đáng lưu ý:
 
-Sự cố 6 — AI Agent Mexico (2026): Source "OWASP GenAI Report Q1-2026" không tìm được URL xác minh độc lập. Đây là sự cố có rủi ro confabulation cao nhất trong danh sách.
-Sự cố 18 — Synapse Xray Medical AI Bias (2025): Tên thực thể "Synapse Xray" không khớp với bất kỳ sản phẩm AI y tế nào được báo chí công khai ghi nhận sự cố bias trong 2025. Có các sản phẩm gần tên như Synapse AI (Fujifilm), Aidoc, Rad AI — nhưng không có "Synapse Xray" với sự cố bias cụ thể. Đây là hallucination tên thực thể.
+Sự cố 6 - AI Agent Mexico (2026): Source "OWASP GenAI Report Q1-2026" không tìm được URL xác minh độc lập. Đây là sự cố có rủi ro confabulation cao nhất trong danh sách.
+Sự cố 18 - Synapse Xray Medical AI Bias (2025): Tên thực thể "Synapse Xray" không khớp với bất kỳ sản phẩm AI y tế nào được báo chí công khai ghi nhận sự cố bias trong 2025. Có các sản phẩm gần tên như Synapse AI (Fujifilm), Aidoc, Rad AI - nhưng không có "Synapse Xray" với sự cố bias cụ thể. Đây là hallucination tên thực thể.
 
 Phân tích 20 điểm Hallucination/Bias:
-Sự cốLoại lỗiĐiểm Gemini giải thích sai / thiếu01 — Air Canada ChatbotThiếu TTBỏ qua phán quyết pháp lý của Tòa án British Columbia — tiền lệ quan trọng nhất: Air Canada phải chịu trách nhiệm pháp lý cho nội dung chatbot, bác bỏ lập luận chatbot là "pháp nhân riêng biệt"02 — Google Gemini Image BiasBiasMô tả "bộ lọc diversity quá mức" đổ lỗi cho kỹ thuật, bỏ qua đây là lỗi product design — Google hard-code diversity prompt injection mà không có exception cho query lịch sử/địa lý cụ thể03 — ChatGPT Redis Data LeakHallucinationMô tả đúng triệu chứng nhưng thiếu chi tiết kỹ thuật: lỗi nằm ở connection không được reset sạch trong thư viện redis-py khi request bị cancel, không phải lỗi Redis server tổng quát04 — Chevrolet Watson Prompt InjectionBiasNhận định "Prompt Injection là gót chân Achilles" là truism chung — bỏ qua root cause cụ thể: chatbot không có hard constraint sandbox và không giới hạn scope phản hồi theo domain sản phẩm05 — iTutorGroup Age BiasThiếu TTMô tả đúng nhưng thiếu thông tin pháp lý quan trọng: đây là vụ kiện EEOC đầu tiên nhắm vào thuật toán tuyển dụng AI, tạo tiền lệ pháp lý cho AI hiring bias tại Mỹ06 — AI Agent Mexico 2026HallucinationSource "OWASP GenAI Report Q1-2026" không có URL xác minh được — có khả năng cao là confabulation tên báo cáo. Vấn đề Excessive Agency là có thật nhưng sự cố cụ thể này không đủ bằng chứng độc lập07 — VNDirect RansomwareBiasNhận định tập trung vào "Disaster Recovery" làm nhẹ bản chất sự cố — đây là tấn công ransomware có chủ đích, VNDirect phải phối hợp Bộ Công an điều tra; frame thành "operational failure" là sai bản chất08 — KyberSwap Smart ContractHallucinationMô tả "thao túng giá trị tick" đúng nhưng thiếu chi tiết cốt lõi: hacker khai thác double-counting liquidity bug trong concentrated liquidity math — lỗi nằm ở phép tính cụ thể trong tick boundary crossing, không phải flash loan đơn thuần09 — PVOIL APT AttackThiếu TTBỏ qua thông tin quan trọng: đây là một phần của chuỗi tấn công APT nhắm vào hạ tầng năng lượng Việt Nam cùng thời điểm với VNDirect (Q1 2024), cho thấy pattern tấn công có phối hợp chứ không phải sự cố độc lập10 — BKAV SQL InjectionBiasNhận định "chủ quan với legacy systems" đúng nhưng có irony bias — đây là công ty bảo mật hàng đầu Việt Nam bị chính lỗi SQL Injection cơ bản nhất; điểm quan trọng hơn là sự cố làm lộ gap giữa năng lực tư vấn bảo mật và năng lực tự bảo vệ nội bộ11 — VNPost MalwareHallucinationMô tả "lỗi cấu hình Remote Desktop yếu" là assumption — không có post-mortem chính thức nào của VNPost xác nhận attack vector cụ thể là RDP; đây là vague attribution12 — CrowdStrike BSODBiasNhận định "lỗi QA gây hậu quả lớn nhất lịch sử" overgeneralize. Root cause cụ thể là lỗi field-count trong Content Validator (template khai báo 20 fields nhưng 21 giá trị được cung cấp gây out-of-bounds read) — đây là lỗi component rất cụ thể, không phải "thất bại QA toàn diện"13 — XZ Utils BackdoorThiếu TTBỏ qua chi tiết quan trọng nhất: người phát hiện là Andres Freund (kỹ sư Microsoft) tình cờ nhận ra độ trễ SSH bất thường khi benchmark — đây là phát hiện ngẫu nhiên, không phải qua quy trình security audit chính thức, làm nổi bật điểm yếu của supply chain review14 — AT&T Network OutageHallucinationMô tả "tham số không tương thích trong routing update" là plausible nhưng AT&T không công bố root cause kỹ thuật chi tiết — đây là extrapolation từ pattern chung của network outage, không phải thông tin xác minh từ AT&T post-mortem15 — Toyota Disk FullBiasNhận định "quản trị hạ tầng cơ bản" đúng nhưng bỏ qua context quan trọng: đây là lần thứ hai Toyota gặp sự cố tương tự (lần đầu 2019) — pattern lặp lại cho thấy vấn đề không phải kỹ thuật mà là failure của monitoring process sau khi đã có precedent16 — MOVEit SQL InjectionHallucinationMô tả "không cần xác thực" là simplification — lỗi thực tế là SQL Injection trong endpoint xử lý file upload (CVE-2023-34362), cho phép bypass authentication qua crafted HTTP request. Nhóm khai thác là Clop ransomware gang, không phải "hacker" generic17 — Southwest Airlines LegacyThiếu TTBỏ qua nguyên nhân chính trị nội bộ quan trọng: DOT (Department of Transportation) điều tra và kết luận Southwest đã biết SkySolver lỗi thời từ nhiều năm trước nhưng trì hoãn đầu tư; đây không chỉ là technical debt mà còn là governance failure có hồ sơ18 — Synapse Xray Medical AIHallucinationFabricate tên thực thể — "Synapse Xray" không tìm được trên PubMed, Google Scholar hay báo chí y tế công nghệ 2024–2025. Vấn đề AI medical bias là có thật nhưng sự cố này không có nguồn xác minh độc lập19 — Terra/Luna CollapseBiasMô tả "vòng xoáy tử thần" đúng về triệu chứng nhưng bias bỏ qua yếu tố có chủ ý: nhiều phân tích on-chain cho thấy có tác nhân lớn chủ động tấn công peg của UST trước khi spiral xảy ra — frame hoàn toàn thành "lỗi thuật toán" bỏ qua khả năng coordinated attack20 — Cloudflare BGPThiếu TTMô tả đúng nhưng thiếu chi tiết từ Cloudflare post-mortem chính thức: sự cố bắt nguồn từ một change trong backbone network tại một PoP cụ thể làm withdraw valid routes, không phải advertise invalid routes như mô tả — distinction quan trọng cho việc hiểu cơ chế BGP failure
+Sự cốLoại lỗiĐiểm Gemini giải thích sai / thiếu01 - Air Canada ChatbotThiếu TTBỏ qua phán quyết pháp lý của Tòa án British Columbia - tiền lệ quan trọng nhất: Air Canada phải chịu trách nhiệm pháp lý cho nội dung chatbot, bác bỏ lập luận chatbot là "pháp nhân riêng biệt"02 - Google Gemini Image BiasBiasMô tả "bộ lọc diversity quá mức" đổ lỗi cho kỹ thuật, bỏ qua đây là lỗi product design - Google hard-code diversity prompt injection mà không có exception cho query lịch sử/địa lý cụ thể03 - ChatGPT Redis Data LeakHallucinationMô tả đúng triệu chứng nhưng thiếu chi tiết kỹ thuật: lỗi nằm ở connection không được reset sạch trong thư viện redis-py khi request bị cancel, không phải lỗi Redis server tổng quát04 - Chevrolet Watson Prompt InjectionBiasNhận định "Prompt Injection là gót chân Achilles" là truism chung - bỏ qua root cause cụ thể: chatbot không có hard constraint sandbox và không giới hạn scope phản hồi theo domain sản phẩm05 - iTutorGroup Age BiasThiếu TTMô tả đúng nhưng thiếu thông tin pháp lý quan trọng: đây là vụ kiện EEOC đầu tiên nhắm vào thuật toán tuyển dụng AI, tạo tiền lệ pháp lý cho AI hiring bias tại Mỹ06 - AI Agent Mexico 2026HallucinationSource "OWASP GenAI Report Q1-2026" không có URL xác minh được - có khả năng cao là confabulation tên báo cáo. Vấn đề Excessive Agency là có thật nhưng sự cố cụ thể này không đủ bằng chứng độc lập07 - VNDirect RansomwareBiasNhận định tập trung vào "Disaster Recovery" làm nhẹ bản chất sự cố - đây là tấn công ransomware có chủ đích, VNDirect phải phối hợp Bộ Công an điều tra; frame thành "operational failure" là sai bản chất08 - KyberSwap Smart ContractHallucinationMô tả "thao túng giá trị tick" đúng nhưng thiếu chi tiết cốt lõi: hacker khai thác double-counting liquidity bug trong concentrated liquidity math - lỗi nằm ở phép tính cụ thể trong tick boundary crossing, không phải flash loan đơn thuần09 - PVOIL APT AttackThiếu TTBỏ qua thông tin quan trọng: đây là một phần của chuỗi tấn công APT nhắm vào hạ tầng năng lượng Việt Nam cùng thời điểm với VNDirect (Q1 2024), cho thấy pattern tấn công có phối hợp chứ không phải sự cố độc lập10 - BKAV SQL InjectionBiasNhận định "chủ quan với legacy systems" đúng nhưng có irony bias - đây là công ty bảo mật hàng đầu Việt Nam bị chính lỗi SQL Injection cơ bản nhất; điểm quan trọng hơn là sự cố làm lộ gap giữa năng lực tư vấn bảo mật và năng lực tự bảo vệ nội bộ11 - VNPost MalwareHallucinationMô tả "lỗi cấu hình Remote Desktop yếu" là assumption - không có post-mortem chính thức nào của VNPost xác nhận attack vector cụ thể là RDP; đây là vague attribution12 - CrowdStrike BSODBiasNhận định "lỗi QA gây hậu quả lớn nhất lịch sử" overgeneralize. Root cause cụ thể là lỗi field-count trong Content Validator (template khai báo 20 fields nhưng 21 giá trị được cung cấp gây out-of-bounds read) - đây là lỗi component rất cụ thể, không phải "thất bại QA toàn diện"13 - XZ Utils BackdoorThiếu TTBỏ qua chi tiết quan trọng nhất: người phát hiện là Andres Freund (kỹ sư Microsoft) tình cờ nhận ra độ trễ SSH bất thường khi benchmark - đây là phát hiện ngẫu nhiên, không phải qua quy trình security audit chính thức, làm nổi bật điểm yếu của supply chain review14 - AT&T Network OutageHallucinationMô tả "tham số không tương thích trong routing update" là plausible nhưng AT&T không công bố root cause kỹ thuật chi tiết - đây là extrapolation từ pattern chung của network outage, không phải thông tin xác minh từ AT&T post-mortem15 - Toyota Disk FullBiasNhận định "quản trị hạ tầng cơ bản" đúng nhưng bỏ qua context quan trọng: đây là lần thứ hai Toyota gặp sự cố tương tự (lần đầu 2019) - pattern lặp lại cho thấy vấn đề không phải kỹ thuật mà là failure của monitoring process sau khi đã có precedent16 - MOVEit SQL InjectionHallucinationMô tả "không cần xác thực" là simplification - lỗi thực tế là SQL Injection trong endpoint xử lý file upload (CVE-2023-34362), cho phép bypass authentication qua crafted HTTP request. Nhóm khai thác là Clop ransomware gang, không phải "hacker" generic17 - Southwest Airlines LegacyThiếu TTBỏ qua nguyên nhân chính trị nội bộ quan trọng: DOT (Department of Transportation) điều tra và kết luận Southwest đã biết SkySolver lỗi thời từ nhiều năm trước nhưng trì hoãn đầu tư; đây không chỉ là technical debt mà còn là governance failure có hồ sơ18 - Synapse Xray Medical AIHallucinationFabricate tên thực thể - "Synapse Xray" không tìm được trên PubMed, Google Scholar hay báo chí y tế công nghệ 2024–2025. Vấn đề AI medical bias là có thật nhưng sự cố này không có nguồn xác minh độc lập19 - Terra/Luna CollapseBiasMô tả "vòng xoáy tử thần" đúng về triệu chứng nhưng bias bỏ qua yếu tố có chủ ý: nhiều phân tích on-chain cho thấy có tác nhân lớn chủ động tấn công peg của UST trước khi spiral xảy ra - frame hoàn toàn thành "lỗi thuật toán" bỏ qua khả năng coordinated attack20 - Cloudflare BGPThiếu TTMô tả đúng nhưng thiếu chi tiết từ Cloudflare post-mortem chính thức: sự cố bắt nguồn từ một change trong backbone network tại một PoP cụ thể làm withdraw valid routes, không phải advertise invalid routes như mô tả - distinction quan trọng cho việc hiểu cơ chế BGP failure
 Tổng kết phân loại:
 
 8 lỗi Hallucination kỹ thuật (fabricate thực thể, vague attribution, false specificity)
@@ -336,35 +635,35 @@ Tổng kết phân loại:
 
 ---
 
-### (3) Verdict
+#### (3) Verdict
 
 **_VALID_**
 Claude thực hiện đủ hai nhiệm vụ: xác thực lịch sử 20 entries và phân tích hallucination/bias từng entry với reasoning kỹ thuật cụ thể. Output có phân loại lỗi rõ ràng, chỉ ra đúng điểm thiếu/sai thay vì nhận xét chung chung. Kết quả nhất quán với verify thủ công của sinh viên trên các source báo chí gốc và cross-check với Defect 18 qua PubMed/Google Scholar.
 
 ---
 
-### (4) Reasoning
+#### (4) Reasoning
 
 Áp dụng nguyên tắc Independent Testing (ISTQB Section 3.2):
 
 "Independent testers find different defects than the author due to different backgrounds, technical perspectives and biases."
 
-Trong ngữ cảnh AI: Gemini và Claude có kiến trúc, training data và optimization objective khác nhau — sử dụng Claude để review output của Gemini tạo ra "model-level independence", giảm xác suất cả hai mô hình cùng hallucinate theo cùng một hướng trên cùng một sự cố. Đây là ứng dụng trực tiếp của nguyên tắc độc lập kiểm thử vào AI-generated artifact, thay vì chỉ áp dụng cho human tester.
+Trong ngữ cảnh AI: Gemini và Claude có kiến trúc, training data và optimization objective khác nhau - sử dụng Claude để review output của Gemini tạo ra "model-level independence", giảm xác suất cả hai mô hình cùng hallucinate theo cùng một hướng trên cùng một sự cố. Đây là ứng dụng trực tiếp của nguyên tắc độc lập kiểm thử vào AI-generated artifact, thay vì chỉ áp dụng cho human tester.
 Giới hạn cần thừa nhận: Claude cũng là LLM và cũng có thể hallucinate. Vì vậy các điểm Claude đánh dấu rủi ro cao (Sự cố 6, 11, 14, 18) được sinh viên cross-check thủ công thêm bằng Google Search và PubMed trước khi kết luận.
 
 ---
 
-### (5) Student Fix
+#### (5) Student Fix
 
-#Điều chỉnhLý do1Sự cố 6 (AI Agent Mexico): giữ nội dung, thêm tag [UNVERIFIED — source không xác minh được]Không đủ bằng chứng báo chí độc lập để confirm hoặc deny hoàn toàn2Sự cố 18 (Synapse Xray): thêm [ENTITY HALLUCINATION — confirmed] sau khi tra PubMed, Google Scholar và Google News không có kết quảVerify độc lập xác nhận đây là fabricated entity name3Sự cố 11 (VNPost): sửa mô tả attack vector từ "RDP misconfiguration" thành "attack vector chưa được xác nhận chính thức"Không có post-mortem public của VNPost xác nhận chi tiết này4Sự cố 14 (AT&T): thêm ghi chú "root cause kỹ thuật chi tiết chưa được AT&T công bố chính thức"Tránh trình bày assumption như fact đã xác minh5Bổ sung URL source trực tiếp cho 18/20 entries từ Reuters, The Verge, Cloudflare Blog, CrowdStrike PIR, EEOC Press ReleaseClaude không cung cấp URL — sinh viên tự tìm để đảm bảo traceability của artifact
+#Điều chỉnhLý do1Sự cố 6 (AI Agent Mexico): giữ nội dung, thêm tag [UNVERIFIED - source không xác minh được]Không đủ bằng chứng báo chí độc lập để confirm hoặc deny hoàn toàn2Sự cố 18 (Synapse Xray): thêm [ENTITY HALLUCINATION - confirmed] sau khi tra PubMed, Google Scholar và Google News không có kết quảVerify độc lập xác nhận đây là fabricated entity name3Sự cố 11 (VNPost): sửa mô tả attack vector từ "RDP misconfiguration" thành "attack vector chưa được xác nhận chính thức"Không có post-mortem public của VNPost xác nhận chi tiết này4Sự cố 14 (AT&T): thêm ghi chú "root cause kỹ thuật chi tiết chưa được AT&T công bố chính thức"Tránh trình bày assumption như fact đã xác minh5Bổ sung URL source trực tiếp cho 18/20 entries từ Reuters, The Verge, Cloudflare Blog, CrowdStrike PIR, EEOC Press ReleaseClaude không cung cấp URL - sinh viên tự tìm để đảm bảo traceability của artifact
 
-## Entry 4: Test Case Generation for Physical Product (Requirement 3 — Test Design)
+## Entry 5: Test Case Generation for Physical Product (Requirement 3 - Test Design)
 
 **Date of Audit**: 2026-06-03
 **Target AI Model**: Claude Sonnet 4.6
-**Task**: Sử dụng Claude Sonnet 4.6 để thiết kế bộ test case kiểm thử chức năng cho thiết bị vật lý — quạt đứng có dây với 4 nút cơ học (0/1/2/3) và nút chế độ xoay — bao gồm happy path, boundary condition và edge case.
+**Task**: Sử dụng Claude Sonnet 4.6 để thiết kế bộ test case kiểm thử chức năng cho thiết bị vật lý - quạt đứng có dây với 4 nút cơ học (0/1/2/3) và nút chế độ xoay - bao gồm happy path, boundary condition và edge case.
 
-## (1) Prompt + Tool
+### (1) Prompt + Tool
 
 **Tool used**: Claude Sonnet 4.6
 **Timestamp**: 8:00 03/06/2026
@@ -387,15 +686,15 @@ Yêu cầu: bao gồm các test case cho chức năng cơ bản, chuyển tốc 
 
 ---
 
-### (2) AI Output
+#### (2) AI Output
 
 ```
 Claude sinh ra 15 test case chia theo 3 Use Case:
-UC01 — Kiểm thử chức năng tốc độ (TC01–TC08)
+UC01 - Kiểm thử chức năng tốc độ (TC01–TC08)
 TCObjectivePreconditionStepsExpected ResultTC01Kiểm tra bật quạt tốc độ 1Cắm điện, đang ở trạng thái tắt, nhấn nút số 11. Cắm điện 2. Nhấn nút số 1Quạt chạy tốc độ thấp, cánh quay ổn địnhTC02Kiểm tra bật quạt tốc độ 2Cắm điện, đang ở trạng thái tắt, nhấn nút số 21. Cắm điện 2. Nhấn nút số 2Quạt chạy tốc độ trung bìnhTC03Kiểm tra bật quạt tốc độ 3Cắm điện, đang ở trạng thái tắt, nhấn nút số 31. Cắm điện 2. Nhấn nút số 3Quạt chạy tốc độ caoTC04Kiểm tra tắt quạtĐang chạy, nhấn nút OFF1. Đang chạy số 3 2. Nhấn nút OFFQuạt dừng hoàn toànTC05Kiểm tra chuyển tốc độ 1→2Đang số 1, nhấn số 21. Đang ở số 1 2. Nhấn số 2Tốc độ tăng rõ rệtTC06Kiểm tra chuyển tốc độ 2→3Đang số 2, nhấn số 31. Đang ở số 2 2. Nhấn số 3Tốc độ tăng rõ rệtTC07Kiểm tra chuyển tốc độ 3→1Đang số 3, nhấn số 11. Đang ở số 3 2. Nhấn số 1Tốc độ giảm rõ rệtTC08Kiểm tra chuyển tốc độ 1→3Đang số 1, nhấn số 31. Đang ở số 1 2. Nhấn số 3Tốc độ tăng rõ rệt
-UC02 — Kiểm thử chế độ xoay (TC09–TC11)
+UC02 - Kiểm thử chế độ xoay (TC09–TC11)
 TCObjectivePreconditionStepsExpected ResultTC09Kiểm tra bật chế độ xoayBật quạt, bật xoay1. Đang bật số 2 2. Bật chế độ xoayĐầu quạt xoay trái phải liên tụcTC10Kiểm tra tắt chế độ xoayĐang xoay, tắt xoay1. Đang xoay 2. Tắt chế độ xoayĐầu quạt dừng, giữ nguyên hướngTC11Kiểm tra chế độ xoay khi tắt quạt hoàn toànĐang xoay, nhấn nút 01. Đang xoay 2. Nhấn số 0Tốc độ chậm dần, xoay chậm và dừng lại
-UC03 — Kiểm thử điều kiện đặc biệt (TC12–TC15)
+UC03 - Kiểm thử điều kiện đặc biệt (TC12–TC15)
 TCObjectivePreconditionStepsExpected ResultTC12Kiểm tra mất điện đột ngộtĐang chạy số 3, rút điện1. Đang chạy số 3 2. Rút phích điệnQuạt dừng ngay, không có hiện tượng lạTC13Kiểm tra góc xoay đối xứng trái/phảiBật số 1, bật xoay, quan sát góc xoay1. Bật số 1 2. Bật xoay 3. Đo góc xoay trái và phảiGóc xoay trái và phải đối xứng nhauTC14Kiểm tra hành vi khi chặn cơ xoay bằng tayQuạt đang xoay, dừng tay chặn1. Bật chế độ xoay 2. Dùng tay chặn đầu quạtQuạt dừng xoay hoặc có cơ chế bảo vệTC15Kiểm tra nhấn nút liên tục nhanhNhấn số 1→2→3 liên tiếp rất nhanh1. Nhấn số 1 2. Ngay lập tức nhấn số 2 3. Ngay lập tức nhấn số 3Quạt xử lý đúng, không kẹt trạng thái
 ```
 
@@ -404,16 +703,16 @@ TCObjectivePreconditionStepsExpected ResultTC12Kiểm tra mất điện đột n
 ### (3) Verdict
 
 INCOMPLETE
-Claude sinh đủ 15 test case với cấu trúc rõ ràng và bao phủ các chức năng cơ bản. Tuy nhiên output thiếu hai yếu tố bắt buộc theo đề: (a) cột Actual Result và Verdict — đây là thông tin chỉ có được sau khi thực thi trên thiết bị thật, AI không thể tự điền; (b) AI không tự phát hiện được các edge case liên quan đến đặc tính vật lý cụ thể của thiết bị như trạng thái nút cơ học bị kẹt, rung lắc bất thường khi chuyển tốc độ đột ngột, hay hành vi khi cắm điện lại sau khi mất nguồn đột ngột trong lúc đang xoay — những điều này đòi hỏi kinh nghiệm kiểm thử thực tế với thiết bị vật lý.
+Claude sinh đủ 15 test case với cấu trúc rõ ràng và bao phủ các chức năng cơ bản. Tuy nhiên output thiếu hai yếu tố bắt buộc theo đề: (a) cột Actual Result và Verdict - đây là thông tin chỉ có được sau khi thực thi trên thiết bị thật, AI không thể tự điền; (b) AI không tự phát hiện được các edge case liên quan đến đặc tính vật lý cụ thể của thiết bị như trạng thái nút cơ học bị kẹt, rung lắc bất thường khi chuyển tốc độ đột ngột, hay hành vi khi cắm điện lại sau khi mất nguồn đột ngột trong lúc đang xoay - những điều này đòi hỏi kinh nghiệm kiểm thử thực tế với thiết bị vật lý.
 
 ---
 
-### (4) Reasoning
+####(4) Reasoning
 
-Theo ISTQB Foundation Level Section 4.2 — Black-Box Test Techniques, bộ test case này áp dụng chủ yếu Equivalence Partitioning (phân vùng tốc độ 1/2/3/off) và State Transition Testing (chuyển đổi giữa các trạng thái tốc độ và chế độ xoay). Tuy nhiên, theo ISTQB Section 1.4 về giới hạn của kiểm thử tĩnh và tự động, AI chỉ có thể suy luận test case từ đặc tả chức năng — không thể quan sát hành vi vật lý thực tế của thiết bị như độ rung, âm thanh bất thường, hay phản hồi cơ học của nút bấm. Do đó các edge case phát sinh từ đặc tính vật lý (TC13, TC14, TC15 mở rộng) cần được bổ sung bởi tester có tương tác trực tiếp với thiết bị.
+Theo ISTQB Foundation Level Section 4.2 - Black-Box Test Techniques, bộ test case này áp dụng chủ yếu Equivalence Partitioning (phân vùng tốc độ 1/2/3/off) và State Transition Testing (chuyển đổi giữa các trạng thái tốc độ và chế độ xoay). Tuy nhiên, theo ISTQB Section 1.4 về giới hạn của kiểm thử tĩnh và tự động, AI chỉ có thể suy luận test case từ đặc tả chức năng - không thể quan sát hành vi vật lý thực tế của thiết bị như độ rung, âm thanh bất thường, hay phản hồi cơ học của nút bấm. Do đó các edge case phát sinh từ đặc tính vật lý (TC13, TC14, TC15 mở rộng) cần được bổ sung bởi tester có tương tác trực tiếp với thiết bị.
 
 ---
 
 ### (5) Student Fix
 
-#Điều chỉnhLý do1Bổ sung cột Actual Result và Verdict cho tất cả 15 TC sau khi thực thi trên quạt thậtAI không thể tự điền — đây là dữ liệu chỉ có từ thực thi thực tế2Thêm TC16 (edge case): Cắm điện lại sau khi rút đột ngột trong lúc đang xoay — kiểm tra quạt có nhớ trạng thái cũ khôngAI không tạo ra TC này vì không biết đặc tính cơ học của nút bấm vật lý3Thêm TC17 (edge case): Nhấn đồng thời 2 nút tốc độ cùng lúc — kiểm tra hành vi khi nút cơ học bị nhấn chồngAI không tạo ra TC này vì nút cơ học của quạt có thể bị kẹt cả hai cùng lúc, không xảy ra với UI số4Thêm TC18 (edge case): Để quạt chạy liên tục số 3 trong 30 phút — kiểm tra nhiệt độ thân máy và ổn định tốc độ dài hạnAI không tạo ra TC dạng stress/endurance cho thiết bị vật lý5Cập nhật precondition TC11: bổ sung "chế độ xoay đang hoạt động" rõ ràng hơn thay vì chỉ ghi "đang xoay"Precondition gốc thiếu thông tin trạng thái tốc độ quạt tại thời điểm nhấn nút 0
+#Điều chỉnhLý do1Bổ sung cột Actual Result và Verdict cho tất cả 15 TC sau khi thực thi trên quạt thậtAI không thể tự điền - đây là dữ liệu chỉ có từ thực thi thực tế2Thêm TC16 (edge case): Cắm điện lại sau khi rút đột ngột trong lúc đang xoay - kiểm tra quạt có nhớ trạng thái cũ khôngAI không tạo ra TC này vì không biết đặc tính cơ học của nút bấm vật lý3Thêm TC17 (edge case): Nhấn đồng thời 2 nút tốc độ cùng lúc - kiểm tra hành vi khi nút cơ học bị nhấn chồngAI không tạo ra TC này vì nút cơ học của quạt có thể bị kẹt cả hai cùng lúc, không xảy ra với UI số4Thêm TC18 (edge case): Để quạt chạy liên tục số 3 trong 30 phút - kiểm tra nhiệt độ thân máy và ổn định tốc độ dài hạnAI không tạo ra TC dạng stress/endurance cho thiết bị vật lý5Cập nhật precondition TC11: bổ sung "chế độ xoay đang hoạt động" rõ ràng hơn thay vì chỉ ghi "đang xoay"Precondition gốc thiếu thông tin trạng thái tốc độ quạt tại thời điểm nhấn nút 0
