@@ -647,7 +647,8 @@ Tổng kết phân loại:
 
 #### (3) Verdict
 
-**_VALID_**
+**VALID**
+
 Claude thực hiện đủ hai nhiệm vụ: xác thực lịch sử 20 entries và phân tích hallucination/bias từng entry với reasoning kỹ thuật cụ thể. Output có phân loại lỗi rõ ràng, chỉ ra đúng điểm thiếu/sai thay vì nhận xét chung chung. Kết quả nhất quán với verify thủ công của sinh viên trên các source báo chí gốc và cross-check với Defect 18 qua PubMed/Google Scholar.
 
 ---
